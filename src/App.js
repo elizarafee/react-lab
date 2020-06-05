@@ -6,11 +6,13 @@ import './App.css';
 // import Age from './components/age.component';
 // import Pro from './components/props.functionalCom';
 // import Prop from './components/props.classCom';
-import Hello from './components/a'
+// import Hello from './components/a'
+import Message from './components/stateClass.component'
 
 function App() {
   return (
     <div className="App">
+      <Message />
       {/*  
       <Hasan />
       <Eliza age={23} />
@@ -27,7 +29,7 @@ function App() {
         <button>Class</button>
       </Prop> */}
 
-      <Hello />
+      {/* <Hello /> */}
 
     </div>
   );
