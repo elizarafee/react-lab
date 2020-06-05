@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-class Message extends Component {
+class Message1 extends Component {
     constructor(){
         super();
 
@@ -38,4 +38,4 @@ class Message extends Component {
 }
 
 
-export default Message
+export default Message1

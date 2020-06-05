@@ -7,12 +7,14 @@ import './App.css';
 // import Pro from './components/props.functionalCom';
 // import Prop from './components/props.classCom';
 // import Hello from './components/a'
-import Message from './components/stateClass.component'
+// import Message1 from './components/stateClass.component'
+import Message2 from './components/useStateFunction.component'
 
 function App() {
   return (
     <div className="App">
-      <Message />
+      {/* <Message1 /> */}
+      <Message2 />
       {/*  
       <Hasan />
       <Eliza age={23} />
