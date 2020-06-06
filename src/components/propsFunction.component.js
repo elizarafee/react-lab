@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Pro = ({fname, sname}) => {
-    // console.log(props)
+const Pro = props => {
+    const {fname, sname} = props
     return (
         <div>
             <h1>first name : {fname}, second name : {sname}</h1>
