@@ -8,13 +8,15 @@ import './App.css';
 // import Prop from './components/props.classCom';
 // import Hello from './components/a'
 // import Message1 from './components/stateClass.component'
-import Message2 from './components/useStateFunction.component'
+// import Message2 from './components/useStateFunction.component'
+import Counter from './components/counter.component'
 
 function App() {
   return (
     <div className="App">
-      {/* <Message1 /> */}
-      <Message2 />
+      <Counter />
+      {/* <Message1 />
+      <Message2 /> */}
       {/*  
       <Hasan />
       <Eliza age={23} />
