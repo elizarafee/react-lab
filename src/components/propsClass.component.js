@@ -2,9 +2,10 @@ import React, {Component} from 'react'
 
 class Prop extends Component {
     render(){
+    const {fnamee, snamee} = this.props
     return (
     <div>
-    <h3>first name : {this.props.fnamee}, last name : {this.props.snamee}</h3>
+    <h3>first name : {fnamee}, last name : {snamee}</h3>
     <p>{this.props.children}</p>
     </div>
     )
