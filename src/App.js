@@ -10,12 +10,14 @@ import './App.css';
 // import Message1 from './components/stateClass.component'
 // import Message2 from './components/useStateFunction.component'
 // import Counter from './components/counter.component'
-import EventHandler1 from './components/eventHandlerFunction.component'
+// import EventHandler1 from './components/eventHandlerFunction.component'
+import EventHandler2 from './components/eventHandlerClass.component'
 
 function App() {
   return (
     <div className="App">
-      <EventHandler1 />
+      {/* <EventHandler1 /> */}
+      <EventHandler2 />
       {/* <Counter /> */}
       {/* <Message1 />
       <Message2 /> */}
