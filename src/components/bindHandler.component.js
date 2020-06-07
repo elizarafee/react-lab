@@ -7,6 +7,8 @@ class BindHandler extends Component {
         this.state = {
                  message : 'Hi!'
         }
+        //  3rd approach : binding in the constructor 
+        this.change = this.change.bind(this)
     }
 
     change(){
@@ -22,7 +24,9 @@ class BindHandler extends Component {
                 {/* 1st approach */}
                 {/* <button onClick = {this.change.bind(this)}>Click</button>    */}
                 {/* 2nd approach */}
-                <button onClick = {() => this.change()}>Click</button>   
+                {/* <button onClick = {() => this.change()}>Click</button>    */}
+                {/* 3rd approach */}
+                <button onClick = {this.change}>Click</button>   
             </div>
         )
     }
