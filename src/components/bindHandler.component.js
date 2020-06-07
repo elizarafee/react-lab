@@ -1,0 +1,29 @@
+import React, { Component } from 'react'
+
+class BindHandler extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+                 message : 'Hi!'
+        }
+    }
+
+    change(){
+        this.setState({
+            message : 'Bye!'
+        })
+    }
+
+    render() {
+        return (
+            <div>
+                <h1>{this.state.message}</h1>
+                {/* 1st approach */}
+                <button onClick = {this.change.bind(this)}>Click</button>   
+            </div>
+        )
+    }
+}
+
+export default BindHandler

@@ -11,13 +11,15 @@ import './App.css';
 // import Message2 from './components/useStateFunction.component'
 // import Counter from './components/counter.component'
 // import EventHandler1 from './components/eventHandlerFunction.component'
-import EventHandler2 from './components/eventHandlerClass.component'
+// import EventHandler2 from './components/eventHandlerClass.component'
+import BindHandler from './components/bindHandler.component' 
 
 function App() {
   return (
     <div className="App">
+      <BindHandler />
       {/* <EventHandler1 /> */}
-      <EventHandler2 />
+      {/* <EventHandler2 /> */}
       {/* <Counter /> */}
       {/* <Message1 />
       <Message2 /> */}
