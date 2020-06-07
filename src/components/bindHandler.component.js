@@ -20,7 +20,9 @@ class BindHandler extends Component {
             <div>
                 <h1>{this.state.message}</h1>
                 {/* 1st approach */}
-                <button onClick = {this.change.bind(this)}>Click</button>   
+                {/* <button onClick = {this.change.bind(this)}>Click</button>    */}
+                {/* 2nd approach */}
+                <button onClick = {() => this.change()}>Click</button>   
             </div>
         )
     }
