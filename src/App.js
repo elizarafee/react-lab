@@ -12,12 +12,14 @@ import './App.css';
 // import Counter from './components/counter.component'
 // import EventHandler1 from './components/eventHandlerFunction.component'
 // import EventHandler2 from './components/eventHandlerClass.component'
-import BindHandler from './components/bindHandler.component' 
+// import BindHandler from './components/bindHandler.component' 
+import Parent from './components/parent.component'
 
 function App() {
   return (
     <div className="App">
-      <BindHandler />
+      <Parent />
+      {/* <BindHandler /> */}
       {/* <EventHandler1 /> */}
       {/* <EventHandler2 /> */}
       {/* <Counter /> */}
