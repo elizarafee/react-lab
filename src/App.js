@@ -13,12 +13,14 @@ import './App.css';
 // import EventHandler1 from './components/eventHandlerFunction.component'
 // import EventHandler2 from './components/eventHandlerClass.component'
 // import BindHandler from './components/bindHandler.component' 
-import Parent from './components/parent.component'
+// import Parent from './components/parent.component'
+import Condition from './components/conditionalRendering.component'
 
 function App() {
   return (
     <div className="App">
-      <Parent />
+      <Condition />
+      {/* <Parent /> */}
       {/* <BindHandler /> */}
       {/* <EventHandler1 /> */}
       {/* <EventHandler2 /> */}
