@@ -12,17 +12,27 @@ class Condition extends Component {
         super(props)
 
         this.state = {
-                 ifLoggedIn : true
+                 ifLoggedIn : false
         }
     }
 
     render() {
         // 1 : if else
+        // if(this.state.ifLoggedIn){
+        //     return <h1>hello Eliza</h1>
+        // }else{
+        //     return <h1>hello guest</h1>
+        // }
+
+        // 2 : element variable
+        let message
         if(this.state.ifLoggedIn){
-            return <h1>hello Eliza</h1>
+            message = <div>hello Eliza</div>
         }else{
-            return <h1>hello guest</h1>
+            message = <div>hello guest</div>
         }
+
+        return <div>{message}</div>
     }
 }
 
