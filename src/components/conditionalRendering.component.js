@@ -4,7 +4,7 @@ there are 4 approaches of conditional rendering :
 1 - if else
 2 - element variable
 3 - ternary operator ( it can be used in JSX)
-4 - short circuit operator
+4 - short circuit operator (this is just a specific case of this ternary operator which has not any else condition)
 */
 
 class Condition extends Component {
@@ -12,7 +12,7 @@ class Condition extends Component {
         super(props)
 
         this.state = {
-                 ifLoggedIn : false
+                 ifLoggedIn : true
         }
     }
 
@@ -34,9 +34,12 @@ class Condition extends Component {
         // return <div>{message}</div>
 
         // 3 : ternary operator ( it can be used in JSX)
-        return this.state.ifLoggedIn ? 
-        (<div>Hello Eliza</div>) :
-        (<div>Hello guest</div>)
+        // return this.state.ifLoggedIn ? 
+        // (<div>Hello Eliza</div>) :
+        // (<div>Hello guest</div>)
+
+        // 4 - short circuit operator (this is just a specific case of this ternary operator which has not any else condition)
+        return this.state.ifLoggedIn && <div>Hello Eliza</div>
     }
 }
 
