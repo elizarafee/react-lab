@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 there are 4 approaches of conditional rendering :
 1 - if else
 2 - element variable
-3 - ternary operator
+3 - ternary operator ( it can be used in JSX)
 4 - short circuit operator
 */
 
@@ -25,14 +25,18 @@ class Condition extends Component {
         // }
 
         // 2 : element variable
-        let message
-        if(this.state.ifLoggedIn){
-            message = <div>hello Eliza</div>
-        }else{
-            message = <div>hello guest</div>
-        }
+        // let message
+        // if(this.state.ifLoggedIn){
+        //     message = <div>hello Eliza</div>
+        // }else{
+        //     message = <div>hello guest</div>
+        // }
+        // return <div>{message}</div>
 
-        return <div>{message}</div>
+        // 3 : ternary operator ( it can be used in JSX)
+        return this.state.ifLoggedIn ? 
+        (<div>Hello Eliza</div>) :
+        (<div>Hello guest</div>)
     }
 }
 
