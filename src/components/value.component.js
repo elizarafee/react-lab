@@ -1,11 +1,11 @@
 import React from 'react'
 
-const value.component = () => {
+const Value = ({val}) => {
     return (
         <div>
-            
+            <h3> name : {val.name}, school : {val.school}</h3>
         </div>
     )
 }
 
-export default value.component;
+export default Value;

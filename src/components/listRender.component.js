@@ -1,4 +1,5 @@
 import React from 'react'
+import Value from './value.component'
 
 const ListRender = () => {
     const Arr = [
@@ -18,7 +19,7 @@ const ListRender = () => {
             school : 'CCCCCC'
         }
     ]
-    const value = Arr.map(x => <h3>name : {x.name}, school : {x.school}</h3>)
+    const value = Arr.map(x => <Value val={x} />)
     return (
         // List rendering : 4th approach
         <div>{value}</div>
