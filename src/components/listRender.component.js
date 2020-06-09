@@ -19,7 +19,8 @@ const ListRender = () => {
             school : 'CCCCCC'
         }
     ]
-    const value = Arr.map(x => <Value val={x} />)
+    // in list rendering key props have to be included and it need to have a unique id. and the  key props is not accessibe from the child component
+    const value = Arr.map(x => <Value key={x.id} val={x} />)
     return (
         // List rendering : 4th approach
         <div>{value}</div>
