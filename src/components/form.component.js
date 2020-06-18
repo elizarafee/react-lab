@@ -5,13 +5,20 @@ class Form extends Component {
     super(props);
 
     this.state = {
-      username: ""
+      username: "",
+      comment: "",
     };
   }
 
   changeUsername = (event) => {
     this.setState({
       username: event.target.value,
+    });
+  };
+
+  changeComment = (event) => {
+    this.setState({
+      comment: event.target.value,
     });
   };
 
@@ -24,6 +31,14 @@ class Form extends Component {
             type="text"
             value={this.state.username}
             onChange={this.changeUsername}
+          />
+        </div>
+        <div>
+          <label>Comments </label>
+          <textarea
+            type="text"
+            value={this.state.comment}
+            onChange={this.changeComment}
           />
         </div>
       </form>
