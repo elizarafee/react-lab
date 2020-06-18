@@ -7,6 +7,7 @@ class Form extends Component {
     this.state = {
       username: "",
       comment: "",
+      topic: "",
     };
   }
 
@@ -19,6 +20,12 @@ class Form extends Component {
   changeComment = (event) => {
     this.setState({
       comment: event.target.value,
+    });
+  };
+
+  changeTopic = (event) => {
+    this.setState({
+      topic: event.target.value,
     });
   };
 
@@ -40,6 +47,14 @@ class Form extends Component {
             value={this.state.comment}
             onChange={this.changeComment}
           />
+        </div>
+        <div>
+          <label>Topic </label>
+          <select value={this.state.topic} onChange={this.changeTopic}>
+            <option value="React">React</option>
+            <option value="Angular">Angular</option>
+            <option value="Vue">Vue</option>
+          </select>
         </div>
       </form>
     );
