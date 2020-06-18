@@ -1,0 +1,5 @@
+/* the file name have to be ended with 'module.css' and it's locally scoped by default so it can't be used from another file */
+
+.color {
+    color: indianred;
+}

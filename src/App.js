@@ -18,10 +18,19 @@ import './App.css';
 // import ListRender from './components/listRender.component'
 // import StyleSheet from './components/styleSheet.component'
 import InlineStyle from './components/inlineStyle.component'
+import './components/css/style.component.css'
+import styy from './components/css/style.module.css'
+import './css/outsideStyle.css'
+import styl from './css/outsideStyle.module.css'
+
 
 function App() {
   return (
     <div className="App">
+      <h1 className='color'>CSS stylesheet</h1>
+      <h1 className={styy.color}>CSS module</h1>
+      <h1 className='colors'>CSS stylesheet from outside</h1>
+      <h1 className={styl.colors}>CSS module from outside</h1>
       <InlineStyle />
       {/* <StyleSheet head_col={true} head_size={true} /> */}
       {/* <ListRender /> */}
