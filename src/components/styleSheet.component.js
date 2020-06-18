@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.component.css'
+import './css/style.component.css'
 
 const StyleSheet = (props) => {
     let color = props.head_col ? 'heading-color' : '';

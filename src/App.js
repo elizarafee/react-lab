@@ -16,12 +16,14 @@ import './App.css';
 // import Parent from './components/parent.component'
 // import Condition from './components/conditionalRendering.component'
 // import ListRender from './components/listRender.component'
-import StyleSheet from './components/styleSheet.component'
+// import StyleSheet from './components/styleSheet.component'
+import InlineStyle from './components/inlineStyle.component'
 
 function App() {
   return (
     <div className="App">
-      <StyleSheet head_col={true} head_size={true} />
+      <InlineStyle />
+      {/* <StyleSheet head_col={true} head_size={true} /> */}
       {/* <ListRender /> */}
       {/* <Condition /> */}
       {/* <Parent /> */}
