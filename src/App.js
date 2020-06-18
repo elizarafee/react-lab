@@ -15,12 +15,14 @@ import './App.css';
 // import BindHandler from './components/bindHandler.component' 
 // import Parent from './components/parent.component'
 // import Condition from './components/conditionalRendering.component'
-import ListRender from './components/listRender.component'
+// import ListRender from './components/listRender.component'
+import StyleSheet from './components/styleSheet.component'
 
 function App() {
   return (
     <div className="App">
-      <ListRender />
+      <StyleSheet head_col={true} head_size={true} />
+      {/* <ListRender /> */}
       {/* <Condition /> */}
       {/* <Parent /> */}
       {/* <BindHandler /> */}
