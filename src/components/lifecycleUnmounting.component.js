@@ -1,0 +1,1 @@
+// component lifecycle method : unmounting : has 1 method like ComponentWillUnmount

@@ -1,0 +1,1 @@
+// component lifecycle method : Error Handling : has 2 method like : static getDerivedStateFromError & componentDidCatch
