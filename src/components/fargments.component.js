@@ -6,10 +6,10 @@ import React from 'react'
 
 const Fargments = () => {
     return (
-        <React.Fragment>
+        <>
             <h1>The Cow</h1>
             <p>Cow is a domestic animal</p>
-        </React.Fragment>
+        </>
     )
 }
 
