@@ -30,29 +30,21 @@ class Form extends Component {
   };
 
   handleSubmit = (event) => {
-      alert(`${this.state.username} ${this.state.comment} ${this.state.topic}`)
-      event.preventDefault()
-  }
+    alert(`${this.state.username} ${this.state.comment} ${this.state.topic}`);
+    event.preventDefault();
+  };
 
   render() {
-      const {username, comment, topic} = this.state
+    const { username, comment, topic } = this.state;
     return (
       <form onSubmit={this.handleSubmit}>
         <div>
           <label>Username </label>
-          <input
-            type="text"
-            value={username}
-            onChange={this.changeUsername}
-          />
+          <input type="text" value={username} onChange={this.changeUsername} />
         </div>
         <div>
           <label>Comments </label>
-          <textarea
-            type="text"
-            value={comment}
-            onChange={this.changeComment}
-          />
+          <textarea type="text" value={comment} onChange={this.changeComment} />
         </div>
         <div>
           <label>Topic </label>
@@ -62,7 +54,7 @@ class Form extends Component {
             <option value="Vue">Vue</option>
           </select>
         </div>
-        <button type='submit'>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     );
   }
