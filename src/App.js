@@ -24,13 +24,14 @@ import './App.css';
 // import styl from './css/outsideStyle.module.css'
 // import Form from './components/form.component'
 // import MountingA from './components/lifecycleMountingA.component'
-import UpdatingA from './components/lifecycleUpdatingA.component'
+// import UpdatingA from './components/lifecycleUpdatingA.component'
+import Fragments from './components/fargments.component'
 
 
 function App() {
   return (
     <div className="App">
-      <UpdatingA />
+      <Fragments />
       {/* <MountingA /> */}
       {/* <Form /> */}
       {/* <h1 className='color'>CSS stylesheet</h1>
