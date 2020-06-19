@@ -23,12 +23,15 @@ import './App.css';
 // import './css/outsideStyle.css'
 // import styl from './css/outsideStyle.module.css'
 // import Form from './components/form.component'
-import MountingA from './components/lifecycleMountingA.component'
+// import MountingA from './components/lifecycleMountingA.component'
+import UpdatingA from './components/lifecycleUpdatingA.component'
+
 
 function App() {
   return (
     <div className="App">
-      <MountingA />
+      <UpdatingA />
+      {/* <MountingA /> */}
       {/* <Form /> */}
       {/* <h1 className='color'>CSS stylesheet</h1>
       <h1 className={styy.color}>CSS module</h1>
