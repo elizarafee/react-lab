@@ -25,13 +25,15 @@ import './App.css';
 // import Form from './components/form.component'
 // import MountingA from './components/lifecycleMountingA.component'
 // import UpdatingA from './components/lifecycleUpdatingA.component'
-import Fragments from './components/fargments.component'
+// import Fragments from './components/fargments.component'
+import ComponentVsPurecom from './components/componentVsPurecom.component'
 
 
 function App() {
   return (
     <div className="App">
-      <Fragments />
+      <ComponentVsPurecom />
+      {/* <Fragments /> */}
       {/* <MountingA /> */}
       {/* <Form /> */}
       {/* <h1 className='color'>CSS stylesheet</h1>
