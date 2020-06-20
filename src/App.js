@@ -26,13 +26,14 @@ import './App.css';
 // import MountingA from './components/lifecycleMountingA.component'
 // import UpdatingA from './components/lifecycleUpdatingA.component'
 // import Fragments from './components/fargments.component'
-import ComponentVsPurecom from './components/componentVsPurecom.component'
-
+// import ComponentVsPurecom from './components/componentVsPurecom.component'
+import ParentMemo from './components/parentMemo.component'
 
 function App() {
   return (
     <div className="App">
-      <ComponentVsPurecom />
+      <ParentMemo />
+      {/* <ComponentVsPurecom /> */}
       {/* <Fragments /> */}
       {/* <MountingA /> */}
       {/* <Form /> */}
