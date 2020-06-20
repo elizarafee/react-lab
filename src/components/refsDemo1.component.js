@@ -18,11 +18,15 @@ class RefsDemo1 extends Component {
         console.log(this.inputRef)
     }
 
+    clickHandler = () => {
+        alert(this.inputRef.current.value)
+    }
 
     render() {
         return (
             <div>
                 <input type='text' /*step 2:*/ ref={this.inputRef}></input>
+                <button onClick={this.clickHandler}>Click</button>
             </div>
         )
     }
