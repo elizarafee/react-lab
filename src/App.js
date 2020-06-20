@@ -27,12 +27,14 @@ import './App.css';
 // import UpdatingA from './components/lifecycleUpdatingA.component'
 // import Fragments from './components/fargments.component'
 // import ComponentVsPurecom from './components/componentVsPurecom.component'
-import ParentMemo from './components/parentMemo.component'
+// import ParentMemo from './components/parentMemo.component'
+import RefsDemo1 from './components/refsDemo1.component'
 
 function App() {
   return (
     <div className="App">
-      <ParentMemo />
+      <RefsDemo1 />
+      {/* <ParentMemo /> */}
       {/* <ComponentVsPurecom /> */}
       {/* <Fragments /> */}
       {/* <MountingA /> */}
