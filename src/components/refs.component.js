@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ForwardRef from './forwardRef.component'
 
 class Refs extends Component {
     constructor(props) {
@@ -7,14 +8,15 @@ class Refs extends Component {
         this.inputRef = React.createRef();
     }
 
-    focusInput(){
+    focusInput = () => {
         this.inputRef.current.focus();
     }
 
     render() {
         return (
             <div>
-                <input ref={this.inputRef}></input>
+                <ForwardRef ref={this.inputRef} />
+                <button onClick={this.focusInput}>Focus Input</button>
             </div>
         )
     }
