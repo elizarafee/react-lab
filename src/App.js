@@ -29,12 +29,14 @@ import './App.css';
 // import ComponentVsPurecom from './components/componentVsPurecom.component'
 // import ParentMemo from './components/parentMemo.component'
 // import RefsDemo1 from './components/refsDemo1.component'
-import Refs from './components/refs.component'
+// import Refs from './components/refs.component'
+import Test from './components/test'
 
 function App() {
   return (
     <div className="App">
-      <Refs />
+      <Test />
+      {/* <Refs /> */}
       {/* <RefsDemo1 /> */}
       {/* <ParentMemo /> */}
       {/* <ComponentVsPurecom /> */}
