@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 // import Hasan from './components/hasan.component';
 // import Eliza from './components/eliza.component';
@@ -12,7 +12,7 @@ import './App.css';
 // import Counter from './components/counter.component'
 // import EventHandler1 from './components/eventHandlerFunction.component'
 // import EventHandler2 from './components/eventHandlerClass.component'
-// import BindHandler from './components/bindHandler.component' 
+// import BindHandler from './components/bindHandler.component'
 // import Parent from './components/parent.component'
 // import Condition from './components/conditionalRendering.component'
 // import ListRender from './components/listRender.component'
@@ -30,12 +30,25 @@ import './App.css';
 // import ParentMemo from './components/parentMemo.component'
 // import RefsDemo1 from './components/refsDemo1.component'
 // import Refs from './components/refs.component'
-import Test from './components/test'
+// import Test from './components/test'
+import ErrorHandling from "./components/lifecycleErrorHandling.component";
+import ErrorBoundary from "./components/errorBoundary.component";
 
 function App() {
   return (
     <div className="App">
-      <Test />
+      <ErrorBoundary>
+        <ErrorHandling heroName="AAAAAAA" />
+      </ErrorBoundary>
+
+      <ErrorBoundary>
+        <ErrorHandling heroName="BBBBBBB" />
+      </ErrorBoundary>
+      
+      <ErrorBoundary>
+        <ErrorHandling heroName="Hrithik" />
+      </ErrorBoundary>
+      {/* <Test /> */}
       {/* <Refs /> */}
       {/* <RefsDemo1 /> */}
       {/* <ParentMemo /> */}
@@ -69,13 +82,12 @@ function App() {
       <Pro fname = 'Eliza' sname = 'Rafee'>
         <button>Function</button>
       </Pro> */}
-      
+
       {/* <Prop fnamee = 'Eliza' snamee = 'Hasan'>
         <button>Class</button>
       </Prop> */}
 
       {/* <Hello /> */}
-
     </div>
   );
 }
