@@ -31,13 +31,17 @@ import "./App.css";
 // import RefsDemo1 from './components/refsDemo1.component'
 // import Refs from './components/refs.component'
 // import Test from './components/test'
-import ErrorHandling from "./components/lifecycleErrorHandling.component";
-import ErrorBoundary from "./components/errorBoundary.component";
+// import ErrorHandling from "./components/lifecycleErrorHandling.component";
+// import ErrorBoundary from "./components/errorBoundary.component";
+import ClickCounter from './components/clickCounter.component'
+import HoverCounter from './components/hoverCounter.component'
 
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
+      <ClickCounter />
+      <HoverCounter />
+      {/* <ErrorBoundary>
         <ErrorHandling heroName="AAAAAAA" />
       </ErrorBoundary>
 
@@ -47,7 +51,7 @@ function App() {
       
       <ErrorBoundary>
         <ErrorHandling heroName="Hrithik" />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
       {/* <Test /> */}
       {/* <Refs /> */}
       {/* <RefsDemo1 /> */}
