@@ -3,16 +3,35 @@
 // HOC adds additional data or functionality to the original component. so the new component can refered to as enhanced components
 // const EnhancedComponent = higherOrderComponent(OriginalComponent)
 
-import React from 'react'
+import React from "react";
 
-const HigherOrderComponent = OriginalComponent => {  
-    class newComponent extends React.Component {
-        render() {
-            return <OriginalComponent greet='Hey!!'/>
-        }
+const HigherOrderComponent = (OriginalComponent) => {
+  class newComponent extends React.Component {
+    constructor(props) {
+      super(props);
+
+      this.state = {
+        count: 0,
+      };
     }
-    
-    return newComponent
-}
+
+    increamentCount = () => {
+      this.setState((prevState) => {
+        return { count: prevState.count + 1 };
+      });
+    };
+
+    render() {
+      return (
+        <OriginalComponent
+          count={this.state.count}
+          increamentCount={this.increamentCount}
+        />
+      );
+    }
+  }
+
+  return newComponent;
+};
 
 export default HigherOrderComponent;
