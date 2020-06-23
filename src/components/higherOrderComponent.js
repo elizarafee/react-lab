@@ -26,6 +26,9 @@ const HigherOrderComponent = (OriginalComponent) => {
         <OriginalComponent
           count={this.state.count}
           increamentCount={this.increamentCount}
+          // passing props from app.js wont go to the counters instead it will go for the HOC
+          // so when you make HOC make sure to pass down the rest of the props like the next line
+          {... this.props}
         />
       );
     }
