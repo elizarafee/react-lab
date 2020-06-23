@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import HigherOrderComponent from './higherOrderComponent'
 
 class ClickCounter extends Component {
     constructor(props) {
@@ -19,10 +20,10 @@ class ClickCounter extends Component {
         const {count} = this.state
         return (
             <div>
-                <button onClick={this.increamentCount}>Clicked {count} times</button>
+                <button onClick={this.increamentCount}>{this.props.greet} Clicked {count} times</button>
             </div>
         )
     }
 }
 
-export default ClickCounter
+export default HigherOrderComponent(ClickCounter)

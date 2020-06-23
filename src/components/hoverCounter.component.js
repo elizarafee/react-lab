@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import HigherOrderComponent from './higherOrderComponent'
+
 
 class HoverCounter extends Component {
     constructor(props) {
@@ -10,8 +12,8 @@ class HoverCounter extends Component {
     }
 
     increamentCount = () => {
-        this.setState( prevStae => {
-            return {count: prevStae.count +1}
+        this.setState( prevState => {
+            return {count: prevState.count +1}
         })
     }
 
@@ -19,10 +21,10 @@ class HoverCounter extends Component {
         const {count} = this.state
         return (
             <div>
-                <h1 onMouseOver={this.increamentCount}>Hovered {count} times</h1>
+                <h1 onMouseOver={this.increamentCount}>{this.props.greet} Hovered {count} times</h1>
             </div>
         )
     }
 }
 
-export default HoverCounter
+export default HigherOrderComponent(HoverCounter)
