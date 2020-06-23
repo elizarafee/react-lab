@@ -5,7 +5,7 @@
 
 import React from "react";
 
-const HigherOrderComponent = (OriginalComponent) => {
+const HigherOrderComponent = (OriginalComponent, increamentBy) => {
   class newComponent extends React.Component {
     constructor(props) {
       super(props);
@@ -17,7 +17,7 @@ const HigherOrderComponent = (OriginalComponent) => {
 
     increamentCount = () => {
       this.setState((prevState) => {
-        return { count: prevState.count + 1 };
+        return { count: prevState.count + increamentBy };
       });
     };
 

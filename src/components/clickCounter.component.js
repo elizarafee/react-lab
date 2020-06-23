@@ -12,4 +12,4 @@ class ClickCounter extends Component {
     }
 }
 
-export default HigherOrderComponent(ClickCounter)
+export default HigherOrderComponent(ClickCounter, 10)
