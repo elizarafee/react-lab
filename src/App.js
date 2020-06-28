@@ -35,12 +35,24 @@ import "./App.css";
 // import ErrorBoundary from "./components/errorBoundary.component";
 // import ClickCounter from './components/clickCounter.component'
 // import HoverCounter from './components/hoverCounter.component'
-import FunctionAsProps from  './components/functionAsProps'
+// import FunctionAsProps from  './components/functionAsProps'
+import RenderProps from './components/renderProps.component'
+import HoverIncreament from "./components/hoverIncreament.component";
+import ClickIncreament from "./components/clickIncreament.component";
 
 function App() {
   return (
     <div className="App">
-      <FunctionAsProps name={ (isTrue) => isTrue ? 'Tareque' : 'Null' }/>
+      <RenderProps render={(count, increamentCount) => 
+        <HoverIncreament count={count} increamentCount={increamentCount} />
+      }
+      />
+
+      <RenderProps render={(count, increamentCount) => 
+      <ClickIncreament count={count} increamentCount={increamentCount} />
+      }
+      />  
+      {/* <FunctionAsProps name={ (isTrue) => isTrue ? 'Tareque' : 'Null' }/> */}
       {/* <ClickCounter name='Tareque'/>
       <HoverCounter /> */}
       {/* <ErrorBoundary>
