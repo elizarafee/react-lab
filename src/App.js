@@ -45,9 +45,9 @@ import {UserProvider} from './components/userContext'
 function App() {
   return (
     <div className="App">
-      <UserProvider value='Tareque'>
+      {/* <UserProvider value='Tareque'> */}
         <ComponentA />
-      </UserProvider>
+      {/* </UserProvider> */}
       {/* <RenderProps render={(count, increamentCount) => 
         <HoverIncreament count={count} increamentCount={increamentCount} />
       }
