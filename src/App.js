@@ -36,14 +36,19 @@ import "./App.css";
 // import ClickCounter from './components/clickCounter.component'
 // import HoverCounter from './components/hoverCounter.component'
 // import FunctionAsProps from  './components/functionAsProps'
-import RenderProps from './components/renderProps.component'
-import HoverIncreament from "./components/hoverIncreament.component";
-import ClickIncreament from "./components/clickIncreament.component";
+// import RenderProps from './components/renderProps.component'
+// import HoverIncreament from "./components/hoverIncreament.component";
+// import ClickIncreament from "./components/clickIncreament.component";
+import ComponentA from './components/compoA.component'
+import {UserProvider} from './components/userContext'
 
 function App() {
   return (
     <div className="App">
-      <RenderProps render={(count, increamentCount) => 
+      <UserProvider value='Tareque'>
+        <ComponentA />
+      </UserProvider>
+      {/* <RenderProps render={(count, increamentCount) => 
         <HoverIncreament count={count} increamentCount={increamentCount} />
       }
       />
@@ -51,7 +56,7 @@ function App() {
       <RenderProps render={(count, increamentCount) => 
       <ClickIncreament count={count} increamentCount={increamentCount} />
       }
-      />  
+      />   */}
       {/* <FunctionAsProps name={ (isTrue) => isTrue ? 'Tareque' : 'Null' }/> */}
       {/* <ClickCounter name='Tareque'/>
       <HoverCounter /> */}
