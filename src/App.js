@@ -33,14 +33,16 @@ import "./App.css";
 // import Test from './components/test'
 // import ErrorHandling from "./components/lifecycleErrorHandling.component";
 // import ErrorBoundary from "./components/errorBoundary.component";
-import ClickCounter from './components/clickCounter.component'
-import HoverCounter from './components/hoverCounter.component'
+// import ClickCounter from './components/clickCounter.component'
+// import HoverCounter from './components/hoverCounter.component'
+import FunctionAsProps from  './components/functionAsProps'
 
 function App() {
   return (
     <div className="App">
-      <ClickCounter name='Tareque'/>
-      <HoverCounter />
+      <FunctionAsProps name={ (isTrue) => isTrue ? 'Tareque' : 'Null' }/>
+      {/* <ClickCounter name='Tareque'/>
+      <HoverCounter /> */}
       {/* <ErrorBoundary>
         <ErrorHandling heroName="AAAAAAA" />
       </ErrorBoundary>
