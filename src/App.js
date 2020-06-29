@@ -39,15 +39,17 @@ import "./App.css";
 // import RenderProps from './components/renderProps.component'
 // import HoverIncreament from "./components/hoverIncreament.component";
 // import ClickIncreament from "./components/clickIncreament.component";
-import CompoA from './components/compoA.component'
-import CompoC from './components/compoC.component'
-import CompoD from './components/compoD.component'
-import {UserProvider} from './components/userContext'
+// import CompoA from './components/compoA.component'
+// import CompoC from './components/compoC.component'
+// import CompoD from './components/compoD.component'
+// import {UserProvider} from './components/userContext'
+import HttpGet from './components/httpGet.component'
 
 function App() {
   return (
     <div className="App">
-      <UserProvider value='Tareque'>
+      <HttpGet />
+      {/* <UserProvider value='Tareque'>
         <CompoA />
       </UserProvider>
       <UserProvider value='Tareque'>
@@ -55,7 +57,7 @@ function App() {
       </UserProvider>
       <UserProvider value='Tareque'>
         <CompoD />
-      </UserProvider>
+      </UserProvider> */}
       {/* <RenderProps render={(count, increamentCount) => 
         <HoverIncreament count={count} increamentCount={increamentCount} />
       }
