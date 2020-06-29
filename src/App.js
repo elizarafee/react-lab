@@ -39,15 +39,23 @@ import "./App.css";
 // import RenderProps from './components/renderProps.component'
 // import HoverIncreament from "./components/hoverIncreament.component";
 // import ClickIncreament from "./components/clickIncreament.component";
-import ComponentA from './components/compoA.component'
+import CompoA from './components/compoA.component'
+import CompoC from './components/compoC.component'
+import CompoD from './components/compoD.component'
 import {UserProvider} from './components/userContext'
 
 function App() {
   return (
     <div className="App">
-      {/* <UserProvider value='Tareque'> */}
-        <ComponentA />
-      {/* </UserProvider> */}
+      <UserProvider value='Tareque'>
+        <CompoA />
+      </UserProvider>
+      <UserProvider value='Tareque'>
+        <CompoC />
+      </UserProvider>
+      <UserProvider value='Tareque'>
+        <CompoD />
+      </UserProvider>
       {/* <RenderProps render={(count, increamentCount) => 
         <HoverIncreament count={count} increamentCount={increamentCount} />
       }
