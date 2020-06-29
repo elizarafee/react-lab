@@ -44,7 +44,6 @@ class HttpGet extends Component {
                 }
             </div>
         )
-
     }
 }
 

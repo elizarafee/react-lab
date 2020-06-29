@@ -43,12 +43,14 @@ import "./App.css";
 // import CompoC from './components/compoC.component'
 // import CompoD from './components/compoD.component'
 // import {UserProvider} from './components/userContext'
-import HttpGet from './components/httpGet.component'
+// import HttpGet from './components/httpGet.component'
+import HttpPost from './components/httpPost.component'
 
 function App() {
   return (
     <div className="App">
-      <HttpGet />
+      <HttpPost />
+      {/* <HttpGet /> */}
       {/* <UserProvider value='Tareque'>
         <CompoA />
       </UserProvider>
